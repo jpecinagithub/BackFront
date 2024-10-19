@@ -1,0 +1,19 @@
+<div class="container">
+    <button (click)="obtenerAutores()" class="boton">Obtener Autores</button>
+    <table *ngIf="autores.length > 0" class="tabla">
+    <thead>
+    <tr>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th>Imagen</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let autor of autores">
+    <td>{{ autor.nombre }}</td>
+    <td>{{ autor.email }}</td>
+    <td>{{ autor.imagen }}</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
